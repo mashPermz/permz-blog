@@ -1,13 +1,11 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { ThemeProvider } from "theme-ui";
-import { theme } from "../src/logic/styles";
 import styled from "@emotion/styled";
 import { Header } from "../src/components";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Head>
         <title>Permzwitter</title>
         <link
@@ -21,7 +19,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <Component {...pageProps} />
         </main>
       </Container>
-    </ThemeProvider>
+    </>
   );
 };
 

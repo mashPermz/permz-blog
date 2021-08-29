@@ -13,7 +13,8 @@ export default function Home() {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ({ props }: any) => {
+  console.log(`building ${props}`);
   return {
     props: {},
   };
@@ -24,6 +25,6 @@ const Container = styled.div`
 `;
 
 const H2 = styled.h2`
-  text-decoration: underline ${({ theme }) => theme.colors.primary};
+  text-decoration: underline;
   text-align: center;
 `;

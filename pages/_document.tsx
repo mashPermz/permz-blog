@@ -1,5 +1,4 @@
 import Documents, { Html, Head, Main, NextScript } from "next/document";
-import { InitializeColorMode } from "theme-ui";
 
 export default class extends Documents {
   render() {
@@ -7,7 +6,6 @@ export default class extends Documents {
       <Html>
         <Head />
         <body>
-          <InitializeColorMode />
           <Main />
           <NextScript />
         </body>

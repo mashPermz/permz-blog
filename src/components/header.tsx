@@ -1,17 +1,11 @@
-import { IconButton } from "theme-ui";
 import { IoMdSunny } from "react-icons/io";
-import { useToggleColorMode } from "../logic/styles";
 import styled from "@emotion/styled";
 
-export function Header() {
-  const toggleColorMode = useToggleColorMode();
-
+export function Header({ props }: any) {
   return (
     <Container>
       <header>Permzwitter</header>
-      <IconButton aria-label="Dark Mode" onClick={toggleColorMode}>
-        <IoMdSunny size={28} />
-      </IconButton>
+      <IoMdSunny size={28} />
     </Container>
   );
 }

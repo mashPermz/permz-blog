@@ -23,22 +23,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "strict": false,
     "noEmit": true,
-    "typeRoots": ["node_modules/@types", "node_modules"],
-    "types": [
-      "node",
-      "react",
-      "react-dom",
-      "redux-logger",
-      "material-ui",
-      "react-router-dom",
-      "redux",
-      "binary-type-tree",
-      "redux-form",
-      "tedb",
-      "react-tap-event-plugin",
-      "react-hot-loader",
-      "material-ui-icons"
-    ],
     "outDir": "dist"
   },
   "exclude": ["node_modules"],
